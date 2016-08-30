@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	id="com.santinowu.cordova.shortcut"
+	version="0.0.0">
+
+	<name>Shortcut</name>
+	<description>The cordova plugin for creating shortcut in home screen.</description>
+	<license>MIT</license>
+	<keywords>Cordova,Shortcut,Home Screen</keywords>
+
+	<js-module src="www/shortcut.js" name="shortcut">
+		<clobbers target="shortcut" />
+	</js-module>
+
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="Shortcut">
+				<param name="android-package" value="com.santinowu.cordova.shortcut.Shortcut" />
+			</feature>
+		</config-file>
+
+		<config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+            <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+		</config-file>
+
+		<source-file src="src/android/Shortcut.java" target-dir="src/com/santinowu/cordova/shortcut" />
+	</platform>
+</plugin>
