@@ -1,0 +1,25 @@
+{
+  "name": "com.santinowu.cordova.shortcut",
+  "version": "0.0.0",
+  "description": "The cordova plugin for creating shortcut in home screen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Santino-Wu/cordova-plugin-shortcut.git"
+  },
+  "keywords": [
+    "cordova",
+    "shortcut",
+    "home",
+    "home screen"
+  ],
+  "author": "Santino Wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Santino-Wu/cordova-plugin-shortcut/issues"
+  },
+  "homepage": "https://github.com/Santino-Wu/cordova-plugin-shortcut#readme"
+}
